@@ -33,7 +33,7 @@ Detailed descriptions and design notes are available in `docs/roadmap.md`.
 
 ## Repository Structure
 
-genai-projects/
+genai-projects/<br>
 ├── common/ # Shared utilities (LLM clients, IO helpers, text utilities)
 ├── projects/ # Numbered GenAI projects (01_* → 10_*)
 ├── docs/ # Roadmap and architecture notes
@@ -57,24 +57,25 @@ genai-projects/
 python -m venv .venv
 source .venv/bin/activate        # macOS / Linux
 .venv\Scripts\activate           # Windows PowerShell
+```
 
-
-2. Install dependencies
+### 2. Install dependencies
+```bash
 
 pip install -r requirements.txt
+```
 
-
-3. Configure environment variables
-
+### 3. Configure environment variables
 Copy the template and add your API key:
-
+```bash
 cp .env.example .env
-
-
+```
 Edit .env and set:
-
+```bash
 OPENAI_API_KEY=your_openai_api_key_here
-
-4. Run Project 01 (example)
+```
+### 4. Run Project 01 (example)
+```bash
 cd projects/01_resume_intelligence
 streamlit run app.py
+```
