@@ -79,3 +79,24 @@ OPENAI_API_KEY=your_openai_api_key_here
 cd projects/01_resume_intelligence
 streamlit run app.py
 ```
+
+---
+
+## About Me
+
+I am an IT professional with approximately **5 years of industry experience**, primarily working as a **Data Analyst / Data Engineer**, with strong hands-on expertise in:
+
+- Python and its data ecosystem  
+- SQL for analytics and data transformation  
+- Power BI for reporting and business insights  
+
+Over the years, I have worked on turning raw data into actionable insights and
+building analytical solutions used by business and technical stakeholders.
+
+More recently, I have been expanding into **Generative AI and applied NLP**,
+focusing on how LLMs can be integrated into real-world systems such as
+decision-support tools, analytics copilots, and enterprise intelligence platforms.
+
+This repository represents a structured transition from traditional data analytics
+into **system-level GenAI engineering**, emphasizing practicality, explainability,
+and responsible AI design.
