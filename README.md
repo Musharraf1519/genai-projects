@@ -1,32 +1,80 @@
 # GenAI Projects Monorepo
 
-This repository contains a curated set of GenAI projects demonstrating system-level
-engineering, evaluation, and product thinking. Each project is self-contained and
-numbered to show progression.
+This repository contains a curated set of **Generative AI (GenAI) projects** focused on
+**system-level engineering**, **applied NLP / ML**, and **real-world product use cases**.
 
-## Projects (01-10)
-- 01 — Resume Intake & Candidate Intelligence Engine\n- 02 — Contract & Legal Clause Risk Analyzer\n- 03 — Analytics Copilot for Data Teams\n- 04 — Customer Support Intelligence System\n- 05 — Internal Policy Decision Assistant\n- 06 — Market Research & Report Generator\n- 07 — Intelligent Email & Communication Assistant\n- 08 — Domain-Specific Document Reviewer\n- 09 — Incident Analysis & Post-Mortem Generator\n- 10 — Decision-Support System (Human-in-the-Loop)\n
+Each project is:
+- Designed to solve a concrete business problem
+- Implemented as a standalone, runnable system
+- Numbered to clearly show learning and complexity progression
 
-## Structure
-- `common/`: shared utilities (LLM client wrappers, IO helpers, text utils)
-- `projects/`: numbered project folders (`01_*` .. `10_*`)
-- `docs/`: roadmap and design notes
+This is **not a collection of demos**, but a portfolio of **production-style AI systems**.
 
-## Quickstart
-1. Create a Python virtual environment:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate        # macOS / Linux
-   .venv\Scripts\activate         # Windows PowerShell
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Copy your OpenAI key to `.env` (see `.env.example`).
-4. Run the Streamlit app for Project 01:
-   ```bash
-   cd projects/01_resume_intelligence
-   streamlit run app.py
-   ```
+---
 
+## Projects
+
+| # | Project |
+|---|--------|
+| 01 | Resume Intake & Candidate Intelligence Engine |
+| 02 | Contract & Legal Clause Risk Analyzer |
+| 03 | Analytics Copilot for Data Teams |
+| 04 | Customer Support Intelligence System |
+| 05 | Internal Policy Decision Assistant |
+| 06 | Market Research & Report Generator |
+| 07 | Intelligent Email & Communication Assistant |
+| 08 | Domain-Specific Document Reviewer |
+| 09 | Incident Analysis & Post-Mortem Generator |
+| 10 | Decision-Support System (Human-in-the-Loop) |
+
+Detailed descriptions and design notes are available in `docs/roadmap.md`.
+
+---
+
+## Repository Structure
+
+genai-projects/
+├── common/ # Shared utilities (LLM clients, IO helpers, text utilities)
+├── projects/ # Numbered GenAI projects (01_* → 10_*)
+├── docs/ # Roadmap and architecture notes
+├── requirements.txt
+├── .env.example
+└── README.md
+
+
+
+- `common/` contains reusable components used across projects.
+- Each folder inside `projects/` is a self-contained application with its own README.
+- Environment secrets are **never committed**; see `.env.example`.
+
+---
+
+## Quickstart (Local Setup)
+
+### 1. Create and activate a virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate        # macOS / Linux
+.venv\Scripts\activate           # Windows PowerShell
+
+
+2. Install dependencies
+
+pip install -r requirements.txt
+
+
+3. Configure environment variables
+
+Copy the template and add your API key:
+
+cp .env.example .env
+
+
+Edit .env and set:
+
+OPENAI_API_KEY=your_openai_api_key_here
+
+4. Run Project 01 (example)
+cd projects/01_resume_intelligence
+streamlit run app.py
