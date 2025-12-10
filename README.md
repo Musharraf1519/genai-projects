@@ -34,12 +34,12 @@ Detailed descriptions and design notes are available in `docs/roadmap.md`.
 ## Repository Structure
 
 genai-projects/<br>
-├── common/ # Shared utilities (LLM clients, IO helpers, text utilities)
-├── projects/ # Numbered GenAI projects (01_* → 10_*)
-├── docs/ # Roadmap and architecture notes
-├── requirements.txt
-├── .env.example
-└── README.md
+├── common/ # Shared utilities (LLM clients, IO helpers, text utilities)<br>
+├── projects/ # Numbered GenAI projects (01_* → 10_*)<br>
+├── docs/ # Roadmap and architecture notes<br>
+├── requirements.txt<br>
+├── .env.example<br>
+└── README.md <br>
 
 
 
